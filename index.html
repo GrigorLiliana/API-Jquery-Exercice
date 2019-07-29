@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        text-align: center;
+        background-image: url(http://www.sclance.com/backgrounds/body-background-img/body-background-img_430775.jpg);
+      }
+      .card.text-center {
+        width: 30rem;
+        margin: 3rem auto;
+      }
+      .card-header,
+      .card-footer {
+        background-color: rgba(1, 163, 15, 0.89);
+        color: white;
+      }
+      .carousel-item {
+        padding: 1rem;
+      }
+
+      #carouselExampleControls {
+        width: 40rem;
+        border: 2px double rgba(1, 163, 15, 0.89);
+        border-radius: 5px;
+        text-align: center;
+        margin: 3rem auto 0 auto;
+        position: relative;
+        overflow: hidden;
+      }
+      #carouselExampleControls img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0.3;
+      }
+      h1 {
+        margin: 2rem;
+        color: rgba(1, 163, 15, 0.89);
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bolder;
+      }
+      .carousel-inner {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>API gNews</h1>
+    <img
+      id="loader"
+      src="http://cccam.iptvsat4k.net/img/oxygen-loader.gif"
+      alt=""
+    />
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item d-none">
+          <p class="source"></p>
+          <div class="myBackground">
+            <h2 class="title"></h2>
+            <p class="desc"></p>
+            <a class="link btn btn-success" href="">Read the full new</a>
+          </div>
+          <p class="date">Wed, 05 Jun 2019 03:42:15 GMT</p>
+        </div>
+        <img
+          src="https://i.pinimg.com/originals/24/85/4b/24854bc239278f4e4bb859eefff8d049.jpg"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="card text-center">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-success">Read the full new</a>
+      </div>
+      <div class="card-footer text-muted">
+        2 days ago
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
